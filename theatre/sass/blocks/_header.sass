@@ -1,0 +1,257 @@
+.header
+    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url(../img/header/header-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    margin: auto
+    position: relative
+    min-height: 100%
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 51px
+    &-block
+        z-index: 99
+        &__icon
+            display: none
+            z-index: 99
+        &__close
+            display: none
+            z-index: 99
+    &__link
+        display: inline-block
+        position: relative
+        text-decoration: none
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 25px
+        text-transform: uppercase
+        letter-spacing: 1.5px
+        color: #fff
+        margin-right: 63px
+        &:hover::after
+            content: ''
+            position: absolute
+            display: block
+            width: 100%
+            bottom: -5px
+            border: 1px solid #D1A954
+    &__phone
+        position: relative
+        display: inline-block
+        text-decoration: none
+        font-family: Open Sans Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &:hover::after
+            content: ''
+            position: absolute
+            display: block
+            width: 100%
+            bottom: -5px
+            border: 1px solid #D1A954
+.hero
+    display: flex
+    align-items: center
+    padding-top: 191px
+    padding-bottom: 288px
+    &__text
+        flex-basis: 50%
+    &__title
+        font-family: Open Sans Condensed
+        font-weight: bold
+        font-size: 64px
+        line-height: 87px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-bottom: 50px
+    &__description
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 150%
+        color: #FFFFFF
+        margin-bottom: 50px
+    &__button
+        padding: 12px 47px
+    &-poster
+        flex-basis: 50%
+        display: flex
+        justify-content: center
+        &__item
+            width: 350px
+            height: 490px
+.contacts
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(51, 51, 51, 0.75)
+    height: 100%
+    &__title
+        position: relative
+        font-family: Open Sans Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #C4C4C4
+        writing-mode: tb-rl
+        transform: rotate(180deg)
+        padding-bottom: 380px
+        margin-bottom: 40px
+    &__icon
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 85px
+    &__link
+        margin-bottom: 30px
+    
+.vertical-line
+    border: 1px solid white
+    width: 2px
+    height: 80px
+    margin-bottom: 40px
+
+.m-menu
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: none
+
+.df
+    display: flex
+
+@media ( max-width: 1250px)
+    .nav
+        flex-direction: column
+        &__link:last-child
+            margin-right: 0
+        &__phone
+            margin-top: 50px
+    .hero
+        margin-left: 20px
+@media ( max-width: 992px)
+    .header
+        max-width: 992px
+    .nav
+        &__link
+            margin-right: 25px
+    .hero
+        padding-top: 230px
+        padding-bottom: 365px
+        &__text
+            flex-basis: 90%
+        &-poster
+            display: none
+        &__description
+            max-width: 540px
+    .contacts
+        width: 45px
+@media ( max-width: 768px)
+    .contacts
+        display: none
+    .m-menu
+        display: block
+    .nav
+        flex-direction: row
+        align-items: center
+        &__link
+            display: inline-block
+            font-size: 24px
+            margin-bottom: 35px
+            &:hover::after
+                border: none
+            &:last-child
+                margin-bottom: 90px
+        &-block
+            display: none
+            flex-direction: column
+            position: absolute
+            top: 0
+            left: 0
+            width: 300px
+            height: 100%
+            background: #333333
+            &__close
+                position: absolute
+                top: 35px
+                right: 35px
+                background-color: transparent
+                border: none
+                cursor: pointer
+                color: white
+            &__link
+                display: flex
+                flex-direction: column    
+                padding-top: 140px
+                padding-left: 40px  
+            &__icon
+                padding-left: 80px
+                padding-right: 80px
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                flex-wrap: wrap
+                align-items: center
+            &__soc
+                margin-right: 20px
+                margin-bottom: 50px
+        &__phone
+            margin: 0
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                width: 100%
+                bottom: -5px
+                border: 1px solid #D1A954
+    .hero
+        margin-left: 0
+        padding-top: 170px
+        padding-bottom: 250px
+        &__title
+            margin-bottom: 45px
+    .df
+        display: flex
+@media ( max-width: 576px)
+    .nav
+        padding: 25px 0
+    .hero
+        padding-top: 50px
+        padding-bottom: 75px
+        &__text
+            flex-basis: 100%
+        &__title
+            margin-top: 0
+            font-size: 48px
+            letter-spacing: 1px
+            margin-bottom: 40px
+            line-height: 87px
+    .nav__link:last-child
+        margin-bottom: 50px
+    .nav__link
+        margin-bottom: 5%
+    .nav-block__link
+        padding-top: 50px
+    .df
+        display: flex
+    
+
+            

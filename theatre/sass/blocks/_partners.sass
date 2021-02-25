@@ -1,0 +1,26 @@
+.partners
+    &__title
+        margin-bottom: 100px
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        padding-bottom: 120px
+    &__logo
+        flex-basis: 15%
+        margin-right: 75px
+        margin-bottom: 80px
+        &:nth-child(4n+4)
+            margin-right: 0
+        &:nth-child(1n+5)
+            margin-bottom: 0
+@media ( max-width:992px)
+    .partners
+        &__logo
+            flex-basis: 40%
+            &:nth-child(1n+5)
+                margin-bottom: 80px
+            &:nth-child(2n+2)
+                margin-right: 0
+            &:nth-child(1n+7)
+                margin-bottom: 0

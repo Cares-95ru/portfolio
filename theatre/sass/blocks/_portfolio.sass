@@ -1,0 +1,112 @@
+.portfolio
+    padding-bottom: 150px
+    max-width: 1110px
+    margin: auto
+    &__title
+        margin-bottom: 100px
+    &-block
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &__wrapper
+            flex-basis: 33%
+            position: relative
+            margin-bottom: 150px
+            max-width: 443px
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65))
+            &:hover::before 
+                background: none
+            &:hover
+                .portfolio-block__event
+                    display: none
+                .portfolio-block__data
+                    display: none
+                .portfolio-block__link
+                    display: block
+        &__event
+            display: inline-block
+            position: absolute
+            top: 40px
+            left: 40px
+            font-family: Open Sans Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 21px
+            line-height: 33px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #FFFFFF
+        &__data
+            display: inline-block
+            position: absolute
+            bottom: 40px    
+            left: 40px
+            writing-mode: tb-rl
+            transform: rotate(180deg)
+            font-family: Open Sans Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 25px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #FFFFFF
+        &__link
+            display: none
+            position: absolute
+            left: 50%
+            top: 50%
+            margin-left: -50px
+            margin-top: -51.5px
+            background: #D1A954
+            padding: 35px
+            border-radius: 50%
+    &-award
+        display: flex
+        justify-content: center
+        width: 100%
+        height: 100%
+        align-items: center
+        background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url(../img/portfolio/award-bg.png);
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        &__years
+            display: flex
+            flex-direction: column
+            margin: 120px 0
+            margin-right: 100px
+            margin-left: auto
+        &__year
+            font-family: Open Sans Condensed
+            font-style: normal
+            font-weight: bold
+            font-size: 72px
+            line-height: 98px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #D1A954
+        &__text
+            margin-right: auto
+        &__star
+            margin-bottom: 25px
+        &__title
+            font-family: Open Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 150%
+            color: #FFFFFF
+            max-width: 540px
+
+@media ( max-width: 992px)
+    .portfolio
+        &-award
+            
