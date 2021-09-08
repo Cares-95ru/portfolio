@@ -1,0 +1,36 @@
+.contact {
+    background: url('../img/bg_contact.png') no-repeat center center / cover;
+    padding-top: 120px;
+    min-height: 498px;
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 350px;
+        margin: 0 auto;
+        color: #48555B;
+
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 35px;
+        font-weight: bold;
+        font-size: 13px;
+        color: white;
+        background: #00A4E5;
+        border: none;
+        padding: 11px 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        &__title {
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.footer {
+    padding-top: 42px;
+    background: #141A20;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+    &_row {
+        grid-column: 1/4;
+    }
+
+    &__item {
+        &-title {
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 15px;
+            color: #FFFFFF;
+        }
+
+        &-logo {
+            margin-top: 19px;
+        }
+
+        &-descr {
+            max-width: 250px;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 19px;
+            color: white;
+            margin-top: 16px;
+        }
+
+        &-links {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            column-gap: 35px;
+            row-gap: 10px;
+        }
+
+        &-link {
+            font-weight: 600;
+            font-size: 11px;
+            color: white;
+
+            &:hover {
+                text-decoration: none;
+                color: #00A4E5;
+            }
+        }
+
+
+    }
+
+    &__contacts {
+        &-address {
+            max-width: 90px;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 16px;
+            color: white;
+        }
+
+        &-phone {
+            margin-top: 15px;
+            display: block;
+            font-weight: normal;
+            font-size: 11px;
+            color: white;
+        }
+
+        &-mail {
+            display: block;
+            margin-top: 15px;
+            font-weight: normal;
+            font-size: 11px;
+            color: white;
+        }
+    }
+
+    &__social {
+        margin-top: 30px;
+        display: flex;
+        width: 87px;
+        justify-content: space-between;
+
+        a {
+            img {
+                width: 12px;
+            }
+        }
+    }
+
+    &__copyrigth {
+        background: #171819;
+        margin-top: 40px;
+        padding: 22px 0;
+        text-align: center;
+        font-weight: normal;
+        font-size: 11px;
+        color: white;
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        &__wrapper {
+            grid-template-columns: repeat(2, auto);
+            row-gap: 20px;
+        }
+
+        &__item {
+            &-logo {
+                margin-top: 0;
+            }
+        }
+
+        &__social {
+            margin-top: 0;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__wrapper {
+            row-gap: 25px;
+        }
+
+        &__item {
+            grid-column: 1 / 3;
+
+            &-descr {
+                max-width: none;
+            }
+        }
+    }
+}

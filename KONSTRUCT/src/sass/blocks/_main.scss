@@ -1,0 +1,26 @@
+.main {
+    background: url('../img/bg_main.png') no-repeat center center / cover;
+    min-height: 100vh;
+    padding-bottom: 30px;
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        padding-top: 41px;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 400;
+        color: white;
+        margin-top: 318px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+}
